@@ -1,0 +1,29 @@
+<section class="hero is-info is-large">
+  <!-- Hero header: will stick at the top -->
+  <div class="hero-head">
+      <div class="container">
+        <div class="tabs is-centered">
+          <ul>
+            <li><a routerLink="/" routerLinkActive="is-active" [routerLinkActiveOptions]="{exact:
+true}">Home</a></li>
+            <li><a routerLink="/services" routerLinkActive="is-active">Services</a></li>
+            <li><a routerLink="/contact" routerLinkActive="is-active" >Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+      <div class="container">
+        <div class="content has-text-centered">
+          Cloud Computer Repair & Services &copy; 2017 &#124; <a href="tel:8328446825">(832) 844-6825</a>
+        </div>
+      </div>
+  </div>
+</section>
